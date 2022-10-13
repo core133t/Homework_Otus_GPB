@@ -1,4 +1,3 @@
-# Homework_Otus_GPB
 Homework solutions for Otus/Gazprombank course
 ==============================================
 Loginov Dmitry (gatestreet1337@icloud.com)
