@@ -21,6 +21,7 @@ func Solution(_ input:[Int]) -> Int {
 return firstIndex
 }
 
+
 //print(Solution(test))
 print(Solution(input))
 
