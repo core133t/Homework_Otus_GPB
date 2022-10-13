@@ -29,7 +29,7 @@ func secondSolution(_ arrOne: inout [Character],_ arrTwo: inout [Character]) -> 
 }
 print(secondSolution(&exampleArrOne, &exampleArrTwo))
 
-//******************************ThirdTask***********************************
+//******************************ThirdTask************************************
 var exampleDict = ["Aleksey":"qwerty",
                    "Oleg":"123456",
                    "Polina":"donttrycrackme!!18,.",
