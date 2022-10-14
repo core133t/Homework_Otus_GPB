@@ -17,7 +17,7 @@ func convertNumToStr(_ tuple:(num:Int,str:String)) -> String {
 }
 
 print(convertNumToStr(exampleTuple))
-//******************************ThirdTask**************************************/
+//******************************ThirdTask**************************************
 typealias call = () -> Void
 var exampleClouser:call? = {
     print("optional clouser was call")
