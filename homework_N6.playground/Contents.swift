@@ -1,8 +1,12 @@
 import Foundation
 
-struct Stack<Element> {
+class Stack<Element> {
     
     var stack:[Element] = []
+    init(_ stack:[Element]) {
+        self.stack = stack
+    }
+    
     
     var count:Int {
         get {
@@ -10,19 +14,19 @@ struct Stack<Element> {
         }
     }
     
-    mutating func push (_ element:Element) -> Void {
+    func push (_ element:Element) -> Void {
         stack.append(element)
     }
     
-    mutating func pop () -> Element? {
+    func pop () -> Element? {
         stack.popLast()
     }
     
-    mutating func peek () -> Element? {
+    func peek () -> Element? {
         return stack.last
     }
     
-    mutating func clear () -> Void {
+    func clear () -> Void {
         stack.removeAll()
     }
 }
@@ -45,11 +49,12 @@ struct Stack<Element> {
 3
 */
 
-var stEx1 = Stack(stack: [1, 3, 3, 3, 2])
-var stEx2 = Stack(stack: [1, 4, 4, 4, 4, 1, 1])
+var stEx1 = Stack<Int>([1, 3, 3, 3, 2])
+var stEx2 = Stack<Int>([1, 4, 4, 4, 4, 1, 1])
+
 
 func Solution (_ st:inout Stack<Int>) -> Int {
-    var st2 = Stack<Int>(stack: [])
+    var st2 = Stack<Int>([])
     var answer = 0
     var now = 1
     
