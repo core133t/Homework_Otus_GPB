@@ -24,4 +24,4 @@ About my branches
 There are three branches:
 - Main branch for latest production version.
 - Develop branch for projects that are currently in progress.
-- Release branch is an intermediate branch before production to identify problems or save versions that are already working but not ready for production.
+- (NOW NOT USING) Release branch is an intermediate branch before production to identify problems or save versions that are already working but not ready for production.
