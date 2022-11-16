@@ -1,0 +1,327 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21225" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="d7M-BK-EPu">
+    <device id="retina6_0" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21207"/>
+        <capability name="Image references" minToolsVersion="12.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--MintVC-->
+        <scene sceneID="DAG-s1-eqb">
+            <objects>
+                <viewController storyboardIdentifier="MintVC" useStoryboardIdentifierAsRestorationIdentifier="YES" id="qRq-DZ-hAz" customClass="MintVC" customModule="homework_N9" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="gfG-UT-pcv">
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OtI-xR-fZY">
+                                <rect key="frame" x="99.666666666666686" y="397.66666666666669" width="191" height="49"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Go to Brown">
+                                    <fontDescription key="titleFontDescription" name="Helvetica" family="Helvetica" pointSize="30"/>
+                                    <color key="baseForegroundColor" systemColor="labelColor"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <segue destination="IyF-sV-S1C" kind="show" id="hFg-EG-1Kc"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="SPc-JA-PPo"/>
+                        <color key="backgroundColor" systemColor="systemMintColor"/>
+                        <constraints>
+                            <constraint firstItem="OtI-xR-fZY" firstAttribute="centerY" secondItem="gfG-UT-pcv" secondAttribute="centerY" id="HDV-6E-OqX"/>
+                            <constraint firstItem="OtI-xR-fZY" firstAttribute="centerX" secondItem="gfG-UT-pcv" secondAttribute="centerX" id="nsO-3M-Lek"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="MFk-Xk-Aaz"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="HDx-Re-oyA" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <exit id="8CY-fi-Vja" userLabel="Exit" sceneMemberID="exit"/>
+            </objects>
+            <point key="canvasLocation" x="1900" y="-2625.3554502369666"/>
+        </scene>
+        <!--YellowVC-->
+        <scene sceneID="zJ7-Df-6JW">
+            <objects>
+                <viewController storyboardIdentifier="YellowVC" useStoryboardIdentifierAsRestorationIdentifier="YES" id="j6r-ic-eDO" customClass="YellowVC" customModule="homework_N9" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="dR0-8W-t1d">
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RkC-Lq-wbx">
+                                <rect key="frame" x="98.666666666666671" y="397.66666666666669" width="192.66666666666663" height="48.666666666666686"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Go to Purple">
+                                    <fontDescription key="titleFontDescription" name="Helvetica" family="Helvetica" pointSize="30"/>
+                                    <color key="baseForegroundColor" systemColor="labelColor"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <segue destination="rr7-qt-rUv" kind="show" id="Cw2-Kg-gat"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="FU1-4w-xvh"/>
+                        <color key="backgroundColor" systemColor="systemYellowColor"/>
+                        <constraints>
+                            <constraint firstItem="RkC-Lq-wbx" firstAttribute="centerX" secondItem="dR0-8W-t1d" secondAttribute="centerX" id="JQl-C8-srQ"/>
+                            <constraint firstItem="RkC-Lq-wbx" firstAttribute="centerY" secondItem="dR0-8W-t1d" secondAttribute="centerY" id="Qrs-7g-26B"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="h3C-46-ehX"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="c4L-W4-5ei" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <exit id="0t7-E8-ES8" userLabel="Exit" sceneMemberID="exit"/>
+            </objects>
+            <point key="canvasLocation" x="1900" y="-1867.5355450236966"/>
+        </scene>
+        <!--Tab Bar View Controller-->
+        <scene sceneID="mkI-yC-7A5">
+            <objects>
+                <tabBarController storyboardIdentifier="TabBarViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="d7M-BK-EPu" customClass="TabBarViewController" customModule="homework_N9" customModuleProvider="target" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="ScT-yk-KBl"/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="rdu-kt-h46">
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="barTintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="selectedImageTintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="qeQ-8e-Vcl" kind="relationship" relationship="viewControllers" id="28u-L6-Qrg"/>
+                        <segue destination="ItJ-bq-yM3" kind="relationship" relationship="viewControllers" id="BP7-iZ-YyW"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="9Je-9c-ZeO" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-258" y="-2313"/>
+        </scene>
+        <!--PurpleVC-->
+        <scene sceneID="RSd-vS-GYv">
+            <objects>
+                <viewController storyboardIdentifier="PurpleVC" hidesBottomBarWhenPushed="YES" useStoryboardIdentifierAsRestorationIdentifier="YES" id="rr7-qt-rUv" customClass="PurpleVC" customModule="homework_N9" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="hWs-4d-kGe">
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FTb-5L-qQc">
+                                <rect key="frame" x="100.33333333333333" y="397.66666666666669" width="189.33333333333337" height="48.666666666666686"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Go to Green">
+                                    <fontDescription key="titleFontDescription" name="Helvetica" family="Helvetica" pointSize="30"/>
+                                    <color key="baseForegroundColor" systemColor="labelColor"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <segue destination="IFw-zm-T16" kind="show" id="SWD-Sj-wRu"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Pp6-bA-RiZ">
+                                <rect key="frame" x="57.666666666666657" y="466.33333333333331" width="274.66666666666674" height="48.666666666666686"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Go to Start(Yellow)">
+                                    <fontDescription key="titleFontDescription" name="Helvetica" family="Helvetica" pointSize="30"/>
+                                    <color key="baseForegroundColor" systemColor="labelColor"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <segue destination="0t7-E8-ES8" kind="unwind" unwindAction="unwindToRoot:" id="CfL-lv-oc8"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="9o3-xa-781"/>
+                        <color key="backgroundColor" systemColor="systemPurpleColor"/>
+                        <constraints>
+                            <constraint firstItem="FTb-5L-qQc" firstAttribute="centerY" secondItem="hWs-4d-kGe" secondAttribute="centerY" id="5ow-es-OgI"/>
+                            <constraint firstItem="Pp6-bA-RiZ" firstAttribute="top" secondItem="FTb-5L-qQc" secondAttribute="bottom" constant="20" id="D7k-qy-tqB"/>
+                            <constraint firstItem="Pp6-bA-RiZ" firstAttribute="centerX" secondItem="hWs-4d-kGe" secondAttribute="centerX" id="G1E-mG-Iz7"/>
+                            <constraint firstItem="FTb-5L-qQc" firstAttribute="centerX" secondItem="hWs-4d-kGe" secondAttribute="centerX" id="QTC-4x-bgb"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="8l7-RD-3bP"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="i4E-RC-LqI" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2710.7692307692305" y="-1868.2464454976302"/>
+        </scene>
+        <!--GreenVC-->
+        <scene sceneID="yIz-1k-xNs">
+            <objects>
+                <viewController storyboardIdentifier="GreenVC" hidesBottomBarWhenPushed="YES" useStoryboardIdentifierAsRestorationIdentifier="YES" id="IFw-zm-T16" customClass="GreenVC" customModule="homework_N9" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="59w-rH-JhS">
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6MO-J4-39x">
+                                <rect key="frame" x="57.666666666666657" y="397.66666666666669" width="274.66666666666674" height="48.666666666666686"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Go to Start(Yellow)">
+                                    <fontDescription key="titleFontDescription" name="Helvetica" family="Helvetica" pointSize="30"/>
+                                    <color key="baseForegroundColor" systemColor="labelColor"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <segue destination="0t7-E8-ES8" kind="unwind" unwindAction="unwindToRoot:" id="bTk-WP-yhY"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="sAG-hS-sWL"/>
+                        <color key="backgroundColor" systemColor="systemGreenColor"/>
+                        <constraints>
+                            <constraint firstItem="6MO-J4-39x" firstAttribute="centerX" secondItem="59w-rH-JhS" secondAttribute="centerX" id="PWT-kD-vw5"/>
+                            <constraint firstItem="6MO-J4-39x" firstAttribute="centerY" secondItem="59w-rH-JhS" secondAttribute="centerY" id="oWz-PF-qoa"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="UsH-s6-J7G"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="uS1-x3-AwT" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3526.1538461538462" y="-1868.2464454976302"/>
+        </scene>
+        <!--YELLOW-->
+        <scene sceneID="dp5-dx-rDF">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="qeQ-8e-Vcl" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="YELLOW" image="stop.circle.fill" catalog="system" selectedImage="stop.circle.fill" id="f5D-u6-3i2">
+                        <color key="badgeColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBarItem>
+                    <toolbarItems/>
+                    <navigationItem key="navigationItem" id="A1f-qD-sgL"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="2yz-tc-s31">
+                        <rect key="frame" x="0.0" y="47" width="390" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="j6r-ic-eDO" kind="relationship" relationship="rootViewController" id="i6S-ZV-4Pi"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="sIm-Kv-ZCM" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="970.76923076923072" y="-1867.5355450236966"/>
+        </scene>
+        <!--Brown Vc-->
+        <scene sceneID="NeA-nS-sZ2">
+            <objects>
+                <viewController hidesBottomBarWhenPushed="YES" id="IyF-sV-S1C" customClass="BrownVc" customModule="homework_N9" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="GsR-Mf-pRa">
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="U0t-w2-u5S">
+                                <rect key="frame" x="109.66666666666669" y="397.66666666666669" width="171" height="48.666666666666686"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Go to Gray">
+                                    <fontDescription key="titleFontDescription" name="Helvetica" family="Helvetica" pointSize="30"/>
+                                    <color key="baseForegroundColor" systemColor="labelColor"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <segue destination="z40-ZR-9Mh" kind="show" id="rm1-CC-ft0"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="etd-JK-24M">
+                                <rect key="frame" x="72" y="466.33333333333331" width="246" height="48.666666666666686"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Go to Start(Mint)">
+                                    <fontDescription key="titleFontDescription" name="Helvetica" family="Helvetica" pointSize="30"/>
+                                    <color key="baseForegroundColor" systemColor="labelColor"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <segue destination="8CY-fi-Vja" kind="unwind" unwindAction="unwindToRoot:" id="SIr-Q9-Cl7"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="Wvb-aW-eGq"/>
+                        <color key="backgroundColor" systemColor="systemBrownColor"/>
+                        <constraints>
+                            <constraint firstItem="U0t-w2-u5S" firstAttribute="centerY" secondItem="GsR-Mf-pRa" secondAttribute="centerY" id="IjB-e9-Pnh"/>
+                            <constraint firstItem="etd-JK-24M" firstAttribute="centerX" secondItem="GsR-Mf-pRa" secondAttribute="centerX" id="JEz-XL-Yjb"/>
+                            <constraint firstItem="etd-JK-24M" firstAttribute="top" secondItem="U0t-w2-u5S" secondAttribute="bottom" constant="20" id="jR3-uF-LJx"/>
+                            <constraint firstItem="U0t-w2-u5S" firstAttribute="centerX" secondItem="GsR-Mf-pRa" secondAttribute="centerX" id="kLJ-7q-Te0"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="NcL-Sk-1jJ"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="cvP-GA-0yh" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2709" y="-2625"/>
+        </scene>
+        <!--MINT-->
+        <scene sceneID="g84-xn-3v0">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="ItJ-bq-yM3" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="MINT" image="stop.fill" catalog="system" id="bfV-q3-UPt">
+                        <color key="badgeColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <imageReference key="selectedImage" image="stop.fill" catalog="system" symbolScale="default"/>
+                    </tabBarItem>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="5Ix-Kf-sxq">
+                        <rect key="frame" x="0.0" y="47" width="390" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="qRq-DZ-hAz" kind="relationship" relationship="rootViewController" id="7Co-7F-aMy"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="rNw-6M-51u" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="970.76923076923072" y="-2625.3554502369666"/>
+        </scene>
+        <!--GrayVC-->
+        <scene sceneID="ZEk-t1-5nj">
+            <objects>
+                <viewController hidesBottomBarWhenPushed="YES" id="z40-ZR-9Mh" customClass="GrayVC" customModule="homework_N9" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="wCa-HL-VDh">
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WAr-1E-O0a">
+                                <rect key="frame" x="72" y="397.66666666666669" width="246" height="48.666666666666686"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Go to Start(Mint)">
+                                    <fontDescription key="titleFontDescription" name="Helvetica" family="Helvetica" pointSize="30"/>
+                                    <color key="baseForegroundColor" systemColor="labelColor"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <segue destination="8CY-fi-Vja" kind="unwind" unwindAction="unwindToRoot:" id="3PM-X0-alR"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="7nQ-Oj-tk2"/>
+                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="WAr-1E-O0a" firstAttribute="centerX" secondItem="wCa-HL-VDh" secondAttribute="centerX" id="8pU-Fo-Rsp"/>
+                            <constraint firstItem="WAr-1E-O0a" firstAttribute="centerY" secondItem="wCa-HL-VDh" secondAttribute="centerY" id="zul-DK-7Hs"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="acS-pV-WdR"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="0I0-jJ-Fne" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3526" y="-2625"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="stop.circle.fill" catalog="system" width="128" height="123"/>
+        <image name="stop.fill" catalog="system" width="128" height="113"/>
+        <systemColor name="labelColor">
+            <color red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemBrownColor">
+            <color red="0.63529411764705879" green="0.51764705882352946" blue="0.36862745098039218" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemGreenColor">
+            <color red="0.20392156862745098" green="0.7803921568627451" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemMintColor">
+            <color red="0.0" green="0.7803921568627451" blue="0.74509803921568629" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemPurpleColor">
+            <color red="0.68627450980392157" green="0.32156862745098042" blue="0.87058823529411766" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemYellowColor">
+            <color red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
