@@ -11,9 +11,12 @@ class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        NotificationCenter.default.addObserver(self, selector: #selector(stopTimer), name: NSNotification.Name("Stop"), object: nil)
+        NotificationCenter.default.addObserver(self, selector: #selector(startTimer), name: NSNotification.Name("Start"), object: nil)
         
         // Do any additional setup after loading the view.
     }
+    
     
     @IBOutlet weak var timerLabel: UILabel!
     
@@ -23,30 +26,17 @@ class ViewController: UIViewController {
     
     
     @IBAction func startButton(_ sender: UIButton) {
-        createTimer()
-        startButton.isEnabled = false
-        stopButton.isEnabled = true
+        firstStart = false
+        startTimer()
     }
     
     @IBAction func stopButton(_ sender: UIButton) {
-        if let timer = timer {
-            timer.invalidate()
-        }
-        //timer.invalidate()
-        startButton.isEnabled = true
-        stopButton.isEnabled = false
+        stopTimer()
     }
     
     var timer:Timer? = nil
     var count = 0
-}
-
-extension ViewController {
-    @objc func updateTimer() {
-        count = count + 1
-        let time = makeTimeToString(seconds: count)
-        timerLabel.text = time
-    }
+    var firstStart = true
     
     func createTimer() {
         timer = Timer.scheduledTimer(timeInterval: 1,
@@ -54,15 +44,8 @@ extension ViewController {
                                      selector: #selector(updateTimer),
                                      userInfo: nil,
                                      repeats: true)
-    }
-    
-    func makeTimeToString(seconds:Int) -> String{
-        var timeString = ""
-        timeString += String(format: "%02d", seconds/60)
-        timeString += ":"
-        timeString += String(format: "%02d", seconds%60)
-        
-        return timeString
+        //MARK: RunLoop
+        RunLoop.current.add(timer!, forMode: .common)
     }
 }
 
