@@ -7,10 +7,10 @@
 
 import UIKit
 
-extension ViewController: UICollectionViewDelegateFlowLayout {
+extension CollectionVeiwHelper: UICollectionViewDelegateFlowLayout {
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-        let itemsPerRow: CGFloat = 2
+        let itemsPerRow: CGFloat = 2 // can change this number of columns
         let paddingWidth = 20 * (itemsPerRow + 1)
         let availableWidth = collectionView.frame.width - paddingWidth
         let widthPerItem = availableWidth / itemsPerRow

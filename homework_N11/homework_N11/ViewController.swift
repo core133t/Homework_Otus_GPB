@@ -8,15 +8,13 @@
 import UIKit
 
 class ViewController: UIViewController {
+    var collectionViewHelper = CollectionVeiwHelper()
     
-    var data = dataImage()
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
         let collectionView = UICollectionView(frame: view.bounds, collectionViewLayout: UICollectionViewFlowLayout())
-        collectionView.register(ImageCell.self, forCellWithReuseIdentifier:data.identifier)
-        collectionView.delegate = self
-        collectionView.dataSource = self
+        collectionViewHelper.setup(for: collectionView)
         view.addSubview(collectionView)
     }
 
