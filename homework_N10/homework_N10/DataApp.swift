@@ -5,10 +5,7 @@
 //  Created by Dmitry Loginov on 24.11.2022.
 //
 
-import Foundation
-
-var data = DataApp()
-
+//var data = DataApp()
 struct DataApp {
     let identifier = "MyCell"
     let dataArray = ["Dog", "Cat", "Sheep", "Sparrow", "Lion", "Rabbit", "Mouse"]

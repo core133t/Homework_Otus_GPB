@@ -1,13 +1,26 @@
 //
-//  TableViewExtension.swift
+//  TableViewHelper.swift
 //  homework_N10
 //
-//  Created by Dmitry Loginov on 24.11.2022.
+//  Created by Dmitry Loginov on 28.11.2022.
 //
-/*
+
 import UIKit
 
-extension ViewController: UITableViewDataSource,UITableViewDelegate {
+protocol showDetailControllerDelegate {
+    func showDetailController(controller: UIViewController)
+}
+
+class TableViewHelper:NSObject, UITableViewDataSource,UITableViewDelegate {
+    
+    var delegate:showDetailControllerDelegate?
+    var data = DataApp()
+    
+    func setup(for tableView:UITableView) {
+        tableView.register(UITableViewCell.self, forCellReuseIdentifier: data.identifier)
+        tableView.delegate = self
+        tableView.dataSource = self
+    }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return data.dataArray.count
@@ -22,7 +35,7 @@ extension ViewController: UITableViewDataSource,UITableViewDelegate {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         let detailViewController = DetailViewController()
         detailViewController.detailText = data.explanationArray[indexPath.row]
-        self.navigationController?.pushViewController(detailViewController, animated: true)
+        delegate?.showDetailController(controller: detailViewController)
     }
 }
-*/
+
